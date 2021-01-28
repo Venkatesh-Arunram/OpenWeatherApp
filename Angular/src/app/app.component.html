@@ -1,0 +1,14 @@
+<ngx-spinner></ngx-spinner>
+<div>
+    <mat-toolbar>
+        <div class="mx-auto">
+            <h1>Open Weather</h1>
+        </div>
+        <div>
+            <a *ngIf="routerurl!=='' && routerurl!=='SignUp' && routerurl!=='Login'" routerLink='/Login' (click)='logout()' data-toggle=" tooltip " data-placement="bottom " title="LogOut " class="nav-link " style="color:orange;padding-right: 5px;font-weight: bolder; ">
+              Logout</a>
+        </div>
+    </mat-toolbar>
+</div>
+<router-outlet>
+</router-outlet>

@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+    background-color: blue;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}

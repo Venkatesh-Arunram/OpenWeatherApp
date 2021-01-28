@@ -1,0 +1,77 @@
+<div class=" Weather">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <h1>{{CW.city.cityname}},{{CW.city.country.countryName}}</h1>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <h5>{{CW.dt}}</h5>
+        </div>
+    </div>
+    <div class="row m-0 p-0">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 col-6 d-flex justify-content-center">
+                    <img class="rowimage img-fluid" src="assets\cloud.png ">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 col-6">
+                    <h1 class="font">{{CW.currentWeather}}*c</h1><br>
+                    <h4 *ngIf="CW.currentWeather<=30 && CW.currentWeather>=10" class="sunny">Mostly dry</h4>
+                    <h4 *ngIf="CW.currentWeather>30" class="sunny">Mostly Sunny</h4>
+                    <h4 *ngIf="CW.currentWeather<10" class="sunny">Mostly Snowy</h4>
+                </div>
+            </div>
+        </div>
+        <div class="borderCss  col-md-6 col-sm-6 col-xs-12 ">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 col-4 ">
+                    <h3 class="deg">{{CW.pressure}}</h3><br>
+                    <h4 class="des">Pressure</h4>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-4">
+                    <h3 class="deg">{{CW.wind_speed}}</h3><br>
+                    <h4 class="des">Wind Speed</h4>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-4">
+                    <h3 class="deg">{{CW.humidity}}</h3><br>
+                    <h4 class="des">Humidity</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 col-4">
+                    <h3 class="deg">{{CW.feels_like}}*c</h3><br>
+                    <h4 class="des">Feels Like</h4>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-4">
+                    <h3 class="deg">{{CW.currentWeather}}*c</h3><br>
+                    <h4 class="des">Temperature</h4>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-4">
+                    <h3 class="deg">20:57</h3><br>
+                    <h4 class="des">Sunset</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h2>Today's Weather</h2>
+    <div class="row bottommargin ">
+
+        <owl-carousel [options]="owlOptions" [items]="hourlyWeatherForcity" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+            <mat-card class="cardsize" *ngFor="let hourly of hourlyWeatherForcity">
+                <div>
+                    <h4 class="cardtime">{{hourly.dt|date:'shortTime'}}</h4>
+                </div>
+                <div *ngIf="CW.currentWeather>10">
+                    <img class="img-fluid" src="assets\cloud.png">
+                </div>
+                <div *ngIf="CW.currentWeather<=10">
+                    <img class="img-fluid" src="assets\snow.png">">
+                </div>
+
+                <div>
+                    <h4 class="cardtime">{{hourly.temp}}*c</h4>
+                </div>
+            </mat-card>
+        </owl-carousel>
+    </div>
+</div>

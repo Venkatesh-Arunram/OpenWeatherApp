@@ -1,0 +1,149 @@
+                /* .cities {
+                background-color: blue;
+                background-image: linear-gradient(blue, #4775d1);
+                min-height: 100%;
+                height: auto;
+                max-height: auto;
+                max-width: auto;
+                width: 100%;
+                overflow-x: hidden;
+            } */
+                /* .centerpressure{
+    text-align: center;
+    padding-left: 350px;
+} */
+                /*             
+            mat-card.mat-card {
+                background-color: #24478f;
+            }
+            
+            h2,
+            h5,
+            h4,
+            h3 {
+                color: white;
+            }
+            
+            .deg,
+            .des {
+                text-align: center;
+            } */
+                
+                @media only screen and (max-width: 600px) {
+                    mat-card.cardsize.mat-card.ng-star-inserted {
+                        margin-bottom: 10px;
+                    }
+                    .cities {
+                        background-color: blue;
+                        background-image: linear-gradient(blue, #4775d1);
+                        min-height: auto;
+                        height: 100%;
+                        max-height: auto;
+                        /* overflow-x: hidden; */
+                        overflow-y: hidden;
+                        /* overflow: scroll; */
+                    }
+                    mat-card.mat-card {
+                        background-color: #24478f;
+                    }
+                    h2,
+                    h5,
+                    h4 {
+                        color: white;
+                    }
+                    h4.deg,
+                    h5.des {
+                        text-align: left;
+                        font-size: 15px;
+                    }
+                    h3.deg,
+                    h3.des {
+                        color: white;
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                    .cardsize {
+                        margin-left: 10px;
+                        /* margin-right: 10px; */
+                        /* margin-top: 10px; */
+                        /* overflow-y: visible; */
+                    }
+                }
+                
+                @media only screen and (min-width: 768px) and (max-width: 1400px) {
+                    mat-card.cardsize.mat-card.ng-star-inserted {
+                        margin-bottom: 10px;
+                    }
+                    .cities {
+                        background-color: blue;
+                        background-image: linear-gradient(blue, #4775d1);
+                        min-height: 100%;
+                        height: auto;
+                        max-height: auto;
+                        overflow-x: hidden;
+                    }
+                    mat-card.mat-card {
+                        background-color: #24478f;
+                    }
+                    h2,
+                    h5,
+                    h4 {
+                        color: white;
+                    }
+                    h4.deg,
+                    h5.des {
+                        text-align: left;
+                        font-size: 15px;
+                    }
+                    h3.deg,
+                    h3.des {
+                        color: white;
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                    .cardsize {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        overflow-y: visible;
+                    }
+                }
+                
+                @media only screen and (min-width: 1401px) {
+                    mat-card.cardsize.mat-card.ng-star-inserted {
+                        margin-bottom: 10px;
+                    }
+                    .cities {
+                        background-color: blue;
+                        background-image: linear-gradient(blue, #4775d1);
+                        min-height: 100%;
+                        height: auto;
+                        max-height: auto;
+                        overflow-x: hidden;
+                    }
+                    mat-card.mat-card {
+                        background-color: #24478f;
+                    }
+                    h2,
+                    h5,
+                    h4 {
+                        color: white;
+                    }
+                    h4.deg,
+                    h5.des {
+                        text-align: left;
+                        font-size: 25px;
+                    }
+                    h3.deg,
+                    h3.des {
+                        color: white;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    .cardsize {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        overflow-y: visible;
+                    }
+                }

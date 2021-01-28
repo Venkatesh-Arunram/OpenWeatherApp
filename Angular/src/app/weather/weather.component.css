@@ -1,0 +1,239 @@
+    /* Laptop or PC */
+    
+    @media only screen and (min-width: 1401px) {
+        mat-card.cardsize.mat-card.ng-star-inserted {
+            margin-left: 30px;
+        }
+        h1,
+        h5,
+        h2 {
+            color: white;
+        }
+        h4 {
+            text-align: center;
+            color: white;
+        }
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 80%;
+        }
+        mat-card.mat-card {
+            background-color: #24478f;
+            width: 230px;
+            height: 350px;
+            border-top-width: auto;
+            position: relative;
+            z-index: 0;
+        }
+        .Weather {
+            padding-left: 50px!important;
+            padding-right: 50px!important;
+            background-color: blue;
+            background-image: linear-gradient(blue, #4775d1);
+            min-height: 100%;
+            height: auto;
+            max-height: auto;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        h3 {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+        .borderCss {
+            border-left: 1px solid white;
+            height: 250px;
+        }
+        img {
+            text-align: center;
+            color: white;
+            width: 60%;
+        }
+        h1.font {
+            font-size: 100px;
+            text-align: center;
+            color: white;
+        }
+        h4.sunny {
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        }
+        h3.deg,
+        h4.des,
+        h4.cardtime {
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        }
+        img.images {
+            /* margin-left: 40px; */
+            justify-content: center;
+        }
+    }
+    /* Mobile */
+    
+    @media only screen and (max-width: 600px) {
+        mat-card.cardsize.mat-card.ng-star-inserted {
+            margin-left: 30px;
+        }
+        h4 {
+            font-size: 13px;
+            text-align: center;
+            color: white;
+        }
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 80%;
+        }
+        .borderCss {
+            border-top: 1px solid white;
+            height: 200px;
+            border-bottom: 1px solid white;
+        }
+        img {
+            width: 50%;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            margin-left: 10px;
+            height: 80%;
+        }
+        h5 {
+            font-size: 15px;
+            color: white;
+        }
+        h3 {
+            font-size: 15px;
+            text-align: center;
+            color: white;
+        }
+        h2 {
+            font-size: 12px;
+            text-align: left;
+            color: white;
+        }
+        h1 {
+            font-size: 20px;
+            color: white;
+        }
+        .Weather {
+            padding-left: 50px!important;
+            padding-right: 50px!important;
+            background-color: blue;
+            background-image: linear-gradient(blue, #4775d1);
+            min-height: 100%;
+            height: auto;
+            max-height: auto;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        h1.font {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        .bottommargin {
+            margin-bottom: 20px;
+        }
+        mat-card.mat-card {
+            background-color: #24478f;
+            width: 100px;
+            height: 150px;
+            border-top-width: auto;
+            position: relative;
+            z-index: 0;
+        }
+        .img-fluid {
+            max-width: 85%;
+            height: auto;
+        }
+        .cardclass {
+            width: 50%;
+        }
+    }
+    /* Tab */
+    
+    @media only screen and (min-width: 601px) and (max-width: 1400px) {
+        mat-card.cardsize.mat-card.ng-star-inserted {
+            margin-left: 30px;
+        }
+        h4 {
+            font-size: 10px;
+            text-align: center;
+            color: white;
+        }
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 80%;
+        }
+        .borderCss {
+            border-left: 1px solid white;
+            height: 170px;
+        }
+        img {
+            width: 70%;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            margin-left: 10px;
+            height: 80%;
+        }
+        h5 {
+            font-size: 13px;
+            color: white;
+        }
+        h3 {
+            font-size: 15px;
+            text-align: center;
+            color: white;
+        }
+        h2 {
+            font-size: 20px;
+            text-align: left;
+            color: white;
+        }
+        h1 {
+            font-size: 20px;
+            color: white;
+        }
+        .Weather {
+            padding-left: 50px!important;
+            padding-right: 50px!important;
+            background-color: blue;
+            background-image: linear-gradient(blue, #4775d1);
+            min-height: 100%;
+            height: auto;
+            max-height: auto;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        h1.font {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+        .bottommargin {
+            margin-bottom: 20px;
+        }
+        mat-card.mat-card {
+            background-color: #24478f;
+            width: 150px;
+            height: 200px;
+            border-top-width: auto;
+            position: relative;
+            z-index: 0;
+        }
+        .img-fluid {
+            max-width: 85%;
+            height: auto;
+        }
+        h3.deg,
+        h4.des,
+        h4.cardtime {
+            font-size: 15px;
+            text-align: center;
+            color: white;
+        }
+    }
